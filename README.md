@@ -11,7 +11,7 @@ This section documents the process of creating the Asteroids clone in C++ with S
 1.  **Install MinGW-w64:** If you don't have `g++`, you'll need to install a C++ compiler like MinGW-w64. You can find installers and instructions online.
 2.  **Download SDL2 Development Libraries:** Go to the [SDL website](https://www.libsdl.org/download-2.0.php) and download the "Development Libraries" for MinGW (usually a `.zip` file).
 3.  **Extract SDL2:** Extract the contents of the `.zip` file to a convenient location.
-4.  **Copy SDL2 files:** Copy the `include` and `lib` folders from the extracted SDL2 directory into the `AsteroidClones/sdl2_cpp_asteroid/src` directory. You will also need to copy `SDL2.dll` and `SDL2_ttf.dll` from the `bin` folder of the extracted SDL2 directory into the `AsteroidClones/sdl2_cpp_asteroid` directory (where the executable will be).
+4.  **Copy SDL2 files:** Copy the `include` and `lib` folders from the extracted SDL2 directory into the `scpp_sdl2_asteroidGame/src` directory. You will also need to copy `SDL2.dll` and `SDL2_ttf.dll` from the `bin` folder of the extracted SDL2 directory into the `AsteroidClones/sdl2_cpp_asteroid` directory (where the executable will be).
 5.  **Compile:** Navigate to the `AsteroidClones/sdl2_cpp_asteroid` directory in your terminal and compile the game using the following command:
     ```bash
     g++ -std=c++11 main.cpp Player.cpp Asteroid.cpp -o main -Isrc/include -Lsrc/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf
